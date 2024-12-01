@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>35-dars</title>
+  </head>
+  <body class="bg-[#F6F7F9]">
+    <!-- header -->
+    <header>
+      <nav class="nav">
+        <div class="container">
+          <div class="nav__wrapper p-[0px] d:px-[60px] d:py-[40px]">
+            <!-- desktop-nav__items -->
+            <div class="flex items-center justify-between desktop-nav__items">
+              <div class="desktop-nav__items-left w-[53.35%] flex gap-[64px]">
+                <!-- Logo -->
+                <div class="nav__logo">
+                  <img src="./assets/icons/logo.svg" alt="" />
+                </div>
+
+                <!-- Search bar -->
+                <div
+                  class="items-center hidden px-4 py-2 border rounded-lg w-[70.29%] d:flex nav__search"
+                >
+                  <div>
+                    <img src="./assets/icons/search-normal.svg" alt="" />
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Search something here"
+                    class="flex-grow ml-2 outline-none"
+                  />
+                  <div>
+                    <img src="./assets/icons/filter.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Icons -->
+              <div class="flex gap-[20px] items-center nav__right-items">
+                <div class="hidden d:block nav__right-item">
+                  <img src="./assets/icons/Like.svg" alt="" />
+                </div>
+
+                <div class="hidden d:block nav__right-item">
+                  <img src="./assets/icons/Notification.svg" alt="" />
+                </div>
+
+                <div class="hidden d:block nav__right-item">
+                  <img src="./assets/icons/Settings.svg" alt="" />
+                </div>
+
+                <!-- Profile -->
+                <div>
+                  <img src="./assets/icons/Profil.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <!-- desktop-search -->
+
+            <!-- Mobile Search -->
+            <div
+              class="flex gap-[16px] items-center w-full mt-[32px] rounded-lg d:hidden nav__mobile-search"
+            >
+              <div
+                class="flex flex-grow rounded-[10px] px-[24px] py-[12px] mobile-search__search__search-wrapper border-[1px]"
+              >
+                <div class="nav__mobile-search">
+                  <img src="./assets/icons/search-normal.svg" alt="" />
+                </div>
+                <input
+                  type="text"
+                  placeholder="Search something here"
+                  class="flex-grow ml-2 outline-none"
+                />
+              </div>
+              <div
+                class="nav__mobile-search__filter border-[1px] rounded-[10px] p-[12px]"
+              >
+                <img src="./assets/icons/filter.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- header -->
+
+    <!-- hero -->
+    <div class="hero mt-[32px]">
+      <div class="container">
+        <div class="d:grid d:grid-cols-2 d:gap-[32px] hero__wrapper">
+          <div
+            id="hero-card-1"
+            class="hero-1 rounded-[10px] border-[1px] relative bg-[url('./assets/images/hero__bg-1.svg')] bg-no-repeat bg-cover overflow-hidden group"
+          >
+            <!-- Info Section -->
+            <div
+              class="hero-1__info mt-[16px] d:mt-[24px] mb-[86px] d:mb-[112px] ml-[16px] d:ml-[24px] w-[240px] d:w-[284px] text-white"
+            >
+              <h1
+                class="hero-1__info-title text-[16px] d:text-[32px] font-[600] leading-[24px] d:leading-[48px] tracking-[-0.02em] d:tracking-[-0.03em]"
+              >
+                The Best Platform for Car Rental
+              </h1>
+              <p
+                class="hero-1__info-desc mt-[12px] d:mt-[16px] text-[12px] d:text-[16px] d:font-[500] leading-[19px] d:leading-[24px] d:tracking-[-0.02em]"
+              >
+                Ease of doing a car rental safely and reliably. Of course at a
+                low price.
+              </p>
+              <div
+                class="inline-block rounded hero-1__info-btn btn mt-[16px] d:mt-[20px] px-[28px] d:px-[20px] py-[14px] d:py-[10px] font-[600] bg-blue"
+              >
+                <a href="#">
+                  <span class="hero-1__info-btn-text"> Rental Car </span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Animated Car -->
+            <div
+              id="car"
+              class="hero-1__card w-[196px] d:w-[416px] absolute bottom-[4px] d:bottom-[7px] left-[53px] d:left-[137px] transition-transform duration-[1.7s] group-hover:translate-x-[600px]"
+            >
+              <img src="./assets/images/hero__car-1.svg" alt="Car" />
+            </div>
+          </div>
+
+          <div
+            id="hero-card-2"
+            class="hero-2 hidden d:block rounded-[10px] border-[1px] relative bg-[url('./assets/images/hero__bg-2.svg')] bg-no-repeat bg-cover overflow-hidden group"
+          >
+            <!-- Info Section -->
+            <div
+              class="hero-2__info mt-[16px] d:mt-[24px] mb-[86px] d:mb-[112px] ml-[16px] d:ml-[24px] w-[240px] d:w-[284px] text-white"
+            >
+              <h1
+                class="hero-2__info-title text-[16px] d:text-[32px] font-[600] leading-[24px] d:leading-[48px] tracking-[-0.02em] d:tracking-[-0.03em]"
+              >
+                The Best Platform for Car Rental
+              </h1>
+              <p
+                class="hero-1__info-desc mt-[12px] d:mt-[16px] text-[12px] d:text-[16px] d:font-[500] leading-[19px] d:leading-[24px] d:tracking-[-0.02em]"
+              >
+                Ease of doing a car rental safely and reliably. Of course at a
+                low price.
+              </p>
+              <div
+                class="inline-block rounded hero-1__info-btn btn mt-[20px] px-[20px] py-[10px] font-[600] bg-[#54A6FF]"
+              >
+                <a href="#">
+                  <span class="hero-1__info-btn-text"> Rental Car </span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Animated Car -->
+            <div
+              id="car-2"
+              class="hero-1__car-2 w-[416px] absolute bottom-[7px] left-[137px] transition-transform duration-[1.7s] group-hover:translate-x-[600px]"
+            >
+              <img src="./assets/images/hero__car-2.svg" alt="Car" />
+            </div>
+          </div>
+
+          <!-- Car Beep Audio -->
+          <audio
+            id="car-beep-1"
+            src="./assets/mp3/mixkit-classic-car-horn-1565.wav"
+          ></audio>
+
+          <audio
+            id="car-beep-2"
+            src="./assets/mp3/mixkit-classic-car-horn-1565.wav"
+          ></audio>
+        </div>
+
+        <!-- hero__date -->
+        <div
+          class="hero__date relative grid grid-cols-1 d:grid-cols-2 gap-[32px] mt-[32px]"
+        >
+          <div
+            class="hero__date-pick-up rounded-[10px] p-[16px] d:px-[48px] d:py-[24px] bg-white"
+          >
+            <div class="flex gap-[8px] hero__date-pick-up__header">
+              <div>
+                <img src="./assets/icons/drop-off.svg" alt="" />
+              </div>
+              <div
+                class="text-[16px] font-[600] leading-[24px] tracking-[-0.02em]"
+              >
+                Pick - Up
+              </div>
+            </div>
+            <div
+              class="grid grid-cols-3 mt-[16px] d:mt-[24px] hero__date-pick-up__body"
+            >
+              <div
+                class="border-r border-[#C3D4E966] pr-[20px] d:pr-[24px] card"
+              >
+                <div
+                  class="card-title font-[700] text-[16px] leading-[24px] tracking-[-0.02em] text-[#1A202C]"
+                >
+                  Locations
+                </div>
+                <select
+                  name=""
+                  id=""
+                  class="w-[100%] mt-[8px] text-[12px] font-[400] leading-[15px] tracking-[-0.01em] text-[#90A3BF]"
+                  aria-label="Choose an location"
+                >
+                  <option value="#">Semarang</option>
+                  <option value="#">smth</option>
+                  <option value="#">smth</option>
+                </select>
+              </div>
+              <div class="border-r border-[#C3D4E966] px-[20px] card">
+                <div
+                  class="card-title font-[700] text-[16px] leading-[24px] tracking-[-0.02em] text-[#1A202C]"
+                >
+                  Date
+                </div>
+                <select
+                  name="#"
+                  id="#"
+                  aria-label="smth"
+                  class="w-[100%] mt-[8px] text-[12px] font-[400] leading-[15px] tracking-[-0.01em] text-[#90A3BF]"
+                >
+                  <option value="#">20 July 2022</option>
+                </select>
+              </div>
+              <div class="border-[#C3D4E966] pl-[20px] card">
+                <div
+                  class="card-title font-[700] text-[16px] leading-[24px] tracking-[-0.02em] text-[#1A202C]"
+                >
+                  Time
+                </div>
+                <select
+                  name=""
+                  id=""
+                  class="w-[100%] mt-[8px] text-[12px] font-[400] leading-[15px] tracking-[-0.01em] text-[#90A3BF]"
+                  aria-label="Choose an location"
+                >
+                  <option value="#">07.00</option>
+                  <option value="#">smth</option>
+                  <option value="#">smth</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="hero__date-pick-up rounded-[10px] p-[16px] d:px-[48px] d:py-[24px] bg-white"
+          >
+            <div class="flex gap-[8px] hero__date-pick-up__header">
+              <div>
+                <img src="./assets/icons/drop-off.svg" alt="" />
+              </div>
+              <div
+                class="text-[16px] font-[600] leading-[24px] tracking-[-0.02em]"
+              >
+                drop-off
+              </div>
+            </div>
+            <div
+              class="grid grid-cols-3 mt-[16px] d:mt-[24px] hero__date-pick-up__body"
+            >
+              <div
+                class="border-r border-[#C3D4E966] pr-[20px] d:pr-[24px] card"
+              >
+                <div
+                  class="card-title font-[700] text-[16px] leading-[24px] tracking-[-0.02em] text-[#1A202C]"
+                >
+                  Locations
+                </div>
+                <select
+                  name=""
+                  id=""
+                  class="w-[100%] mt-[8px] text-[12px] font-[400] leading-[15px] tracking-[-0.01em] text-[#90A3BF]"
+                  aria-label="Choose an location"
+                >
+                  <option value="#">Semarang</option>
+                  <option value="#">smth</option>
+                  <option value="#">smth</option>
+                </select>
+              </div>
+              <div class="border-r border-[#C3D4E966] px-[20px] card">
+                <div
+                  class="card-title font-[700] text-[16px] leading-[24px] tracking-[-0.02em] text-[#1A202C]"
+                >
+                  Date
+                </div>
+                <select
+                  name="#"
+                  id="#"
+                  aria-label="smth"
+                  class="w-[100%] mt-[8px] text-[12px] font-[400] leading-[15px] tracking-[-0.01em] text-[#90A3BF]"
+                >
+                  <option value="#">20 July 2022</option>
+                </select>
+              </div>
+              <div class="border-[#C3D4E966] pl-[20px] card">
+                <div
+                  class="card-title font-[700] text-[16px] leading-[24px] tracking-[-0.02em] text-[#1A202C]"
+                >
+                  Time
+                </div>
+                <select
+                  name=""
+                  id=""
+                  class="w-[100%] mt-[8px] text-[12px] font-[400] leading-[15px] tracking-[-0.01em] text-[#90A3BF]"
+                  aria-label="Choose an location"
+                >
+                  <option value="#">07.00</option>
+                  <option value="#">smth</option>
+                  <option value="#">smth</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-42%] changer"
+          >
+            <img src="./assets/icons/Switch.svg" alt="" />
+          </div>
+        </div>
+        <!-- hero__date -->
+      </div>
+    </div>
+    <!-- hero -->
+
+    <main>
+      <!-- POPULAR-CARD -->
+      <section class="popular-card mt-[32px] d:mt-[36px]">
+        <div class="container">
+          <h2
+            class="popular-card__title px-[20px] py-[10px] font-[600] text-[14px] d:text-[16px] leading-[21px] tracking-[-0.02em] text-[#90A3BF]"
+          >
+            Popular Car
+          </h2>
+          <div
+            class="grid grid-cols-1 d:grid-cols-4 mt-[20px] gap-[19px] d:gap-[32px] card-wrapper"
+          >
+            <div class="card rounded-[10px] p-[16px] relative bg-white">
+              <div class="card__header">
+                <h3
+                  class="card-title text-[16px] d:text-[20px] font-[600] d:font-[700] leading-[24px] d:leading-[30px] tracking-[-0.02em] d:tracking-[-0.03em] text-black"
+                >
+                  Koenigsegg
+                </h3>
+                <p
+                  class="car-type mt-[4px] text-[12px] d:text-[14px] font-[500] d:font-[700] tracking-[-0.02em] leading-[12px] d:leading-[21px] text-[#90A3BF]"
+                >
+                  Sport
+                </p>
+                <div class="relative card__img-wrapper">
+                  <div class="mx-auto mt-[32px] d:mt-[64px] w-[75%] card__img">
+                    <img src="./assets/images/popular__car-1.svg" alt="" />
+                  </div>
+                  <div
+                    class="absolute block card__box-shadow w-[100%] h-[60%]"
+                  ></div>
+                </div>
+
+                <div
+                  class="grid grid-cols-3 mt-[44px] d:mt-[64px] card__header__car-info"
+                >
+                  <div class="flex gap-[4px] items-center oil">
+                    <div class="oil-icon">
+                      <img src="./assets/icons/gas-station.svg" alt="" />
+                    </div>
+                    <p
+                      class="point font-[500] text-[12px] d:text-[14px] tracking-[-0.02em] leading-[12px] d:leading-[17.64px] text-[#90A3BF]"
+                    >
+                      90L
+                    </p>
+                  </div>
+                  <div class="flex gap-[4px] items-center manual">
+                    <div class="manual-icon">
+                      <img src="./assets/icons/manual.svg" alt="" />
+                    </div>
+                    <p
+                      class="point font-[500] text-[12px] d:text-[14px] tracking-[-0.02em] leading-[12px] d:leading-[17.64px] text-[#90A3BF]"
+                    >
+                      Manual
+                    </p>
+                  </div>
+                  <div class="flex gap-[4px] items-center 2-people">
+                    <div class="2-people-icon">
+                      <img src="./assets/icons/profile-2user.svg" alt="" />
+                    </div>
+                    <p
+                      class="point font-[500] text-[12px] d:text-[14px] tracking-[-0.02em] leading-[12px] d:leading-[17.64px] text-[#90A3BF]"
+                    >
+                      2 people
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-evenly mt-[28px] d:mt-[24px] card__body">
+                <div class="card__body-price">
+                  <p
+                    class="text-[20px] font-[700] leading-[25px] tracking-[-0.01em]"
+                  >
+                    99$/
+                    <span
+                      class="text-[16px] d:text-[14px] font-[700] leading-[20px] tracking-[-0.01em] text-[#90A3BF]"
+                    >
+                      day</span
+                    >
+                  </p>
+                </div>
+                <div
+                  class="card__body-btn btn rounded-[4px] px-[16px] py-[10px] text-[12px] font-[600] leading-[15px] tracking-[-0.02em] text-white bg-blue"
+                >
+                  Rental Now
+                </div>
+              </div>
+              <div class="absolute wish top-[24px] right-[24px]">
+                <img src="./assets/icons/wish.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="card rounded-[10px] p-[16px] relative bg-white">
+              <div class="card__header">
+                <h3
+                  class="card-title text-[16px] d:text-[20px] font-[600] d:font-[700] leading-[24px] d:leading-[30px] tracking-[-0.02em] d:tracking-[-0.03em] text-black"
+                >
+                  Nissan GT - R
+                </h3>
+                <p
+                  class="car-type mt-[4px] text-[12px] d:text-[14px] font-[500] d:font-[700] tracking-[-0.02em] leading-[12px] d:leading-[21px] text-[#90A3BF]"
+                >
+                  Sport
+                </p>
+                <div class="relative card__img-wrapper">
+                  <div class="mx-auto mt-[32px] d:mt-[64px] w-[75%] card__img">
+                    <img src="./assets/images/popular__car-2.svg" alt="" />
+                  </div>
+                  <div
+                    class="absolute block card__box-shadow w-[100%] h-[60%]"
+                  ></div>
+                </div>
+
+                <div
+                  class="grid grid-cols-3 mt-[44px] d:mt-[64px] card__header__car-info"
+                >
+                  <div class="flex gap-[4px] items-center oil">
+                    <div class="oil-icon">
+                      <img src="./assets/icons/gas-station.svg" alt="" />
+                    </div>
+                    <p
+                      class="point font-[500] text-[12px] d:text-[14px] tracking-[-0.02em] leading-[12px] d:leading-[17.64px] text-[#90A3BF]"
+                    >
+                      90L
+                    </p>
+                  </div>
+                  <div class="flex gap-[4px] items-center manual">
+                    <div class="manual-icon">
+                      <img src="./assets/icons/manual.svg" alt="" />
+                    </div>
+                    <p
+                      class="point font-[500] text-[12px] d:text-[14px] tracking-[-0.02em] leading-[12px] d:leading-[17.64px] text-[#90A3BF]"
+                    >
+                      Manual
+                    </p>
+                  </div>
+                  <div class="flex gap-[4px] items-center 2-people">
+                    <div class="2-people-icon">
+                      <img src="./assets/icons/profile-2user.svg" alt="" />
+                    </div>
+                    <p
+                      class="point font-[500] text-[12px] d:text-[14px] tracking-[-0.02em] leading-[12px] d:leading-[17.64px] text-[#90A3BF]"
+                    >
+                      2 people
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-evenly mt-[28px] d:mt-[24px] card__body">
+                <div class="card__body-price">
+                  <p
+                    class="text-[20px] font-[700] leading-[25px] tracking-[-0.01em]"
+                  >
+                    99$/
+                    <span
+                      class="text-[16px] d:text-[14px] font-[700] leading-[20px] tracking-[-0.01em] text-[#90A3BF]"
+                    >
+                      day</span
+                    >
+                  </p>
+                </div>
+                <div
+                  class="card__body-btn btn rounded-[4px] px-[16px] py-[10px] text-[12px] font-[600] leading-[15px] tracking-[-0.02em] text-white bg-blue"
+                >
+                  Rental Now
+                </div>
+              </div>
+              <div class="absolute wish top-[24px] right-[24px]">
+                <img src="./assets/icons/wish.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="card rounded-[10px] p-[16px] relative bg-white">
+              <div class="card__header">
+                <h3
+                  class="card-title text-[16px] d:text-[20px] font-[600] d:font-[700] leading-[24px] d:leading-[30px] tracking-[-0.02em] d:tracking-[-0.03em] text-black"
+                >
+                  Rolls - Royce
+                </h3>
+                <p
+                  class="car-type mt-[4px] text-[12px] d:text-[14px] font-[500] d:font-[700] tracking-[-0.02em] leading-[12px] d:leading-[21px] text-[#90A3BF]"
+                >
+                  Sport
+                </p>
+                <div class="relative card__img-wrapper">
+                  <div class="mx-auto mt-[32px] d:mt-[64px] w-[75%] card__img">
+                    <img src="./assets/images/popular__car-3.svg" alt="" />
+                  </div>
+                  <div
+                    class="absolute block card__box-shadow w-[100%] h-[60%]"
+                  ></div>
+                </div>
+
+                <div
+                  class="grid grid-cols-3 mt-[44px] d:mt-[64px] card__header__car-info"
+                >
+                  <div class="flex gap-[4px] items-center oil">
+                    <div class="oil-icon">
+                      <img src="./assets/icons/gas-station.svg" alt="" />
+                    </div>
+                    <p
+                      class="point font-[500] text-[12px] d:text-[14px] tracking-[-0.02em] leading-[12px] d:leading-[17.64px] text-[#90A3BF]"
+                    >
+                      90L
+                    </p>
+                  </div>
+                  <div class="flex gap-[4px] items-center manual">
+                    <div class="manual-icon">
+                      <img src="./assets/icons/manual.svg" alt="" />
+                    </div>
+                    <p
+                      class="point font-[500] text-[12px] d:text-[14px] tracking-[-0.02em] leading-[12px] d:leading-[17.64px] text-[#90A3BF]"
+                    >
+                      Manual
+                    </p>
+                  </div>
+                  <div class="flex gap-[4px] items-center 2-people">
+                    <div class="2-people-icon">
+                      <img src="./assets/icons/profile-2user.svg" alt="" />
+                    </div>
+                    <p
+                      class="point font-[500] text-[12px] d:text-[14px] tracking-[-0.02em] leading-[12px] d:leading-[17.64px] text-[#90A3BF]"
+                    >
+                      2 people
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-evenly mt-[28px] d:mt-[24px] card__body">
+                <div class="card__body-price">
+                  <p
+                    class="text-[20px] font-[700] leading-[25px] tracking-[-0.01em]"
+                  >
+                    99$/
+                    <span
+                      class="text-[16px] d:text-[14px] font-[700] leading-[20px] tracking-[-0.01em] text-[#90A3BF]"
+                    >
+                      day</span
+                    >
+                  </p>
+                </div>
+                <div
+                  class="card__body-btn btn rounded-[4px] px-[16px] py-[10px] text-[12px] font-[600] leading-[15px] tracking-[-0.02em] text-white bg-blue"
+                >
+                  Rental Now
+                </div>
+              </div>
+              <div class="absolute wish top-[24px] right-[24px]">
+                <img src="./assets/icons/wish.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="card rounded-[10px] p-[16px] relative bg-white">
+              <div class="card__header">
+                <h3
+                  class="card-title text-[16px] d:text-[20px] font-[600] d:font-[700] leading-[24px] d:leading-[30px] tracking-[-0.02em] d:tracking-[-0.03em] text-black"
+                >
+                  Nissan GT - R
+                </h3>
+                <p
+                  class="car-type mt-[4px] text-[12px] d:text-[14px] font-[500] d:font-[700] tracking-[-0.02em] leading-[12px] d:leading-[21px] text-[#90A3BF]"
+                >
+                  Sport
+                </p>
+                <div class="relative card__img-wrapper">
+                  <div class="mx-auto mt-[32px] d:mt-[64px] w-[75%] card__img">
+                    <img src="./assets/images/hero__car-2.svg" alt="" />
+                  </div>
+                  <div
+                    class="absolute block card__box-shadow w-[100%] h-[60%]"
+                  ></div>
+                </div>
+
+                <div
+                  class="grid grid-cols-3 mt-[44px] d:mt-[64px] card__header__car-info"
+                >
+                  <div class="flex gap-[4px] items-center oil">
+                    <div class="oil-icon">
+                      <img src="./assets/icons/gas-station.svg" alt="" />
+                    </div>
+                    <p
+                      class="point font-[500] text-[12px] d:text-[14px] tracking-[-0.02em] leading-[12px] d:leading-[17.64px] text-[#90A3BF]"
+                    >
+                      90L
+                    </p>
+                  </div>
+                  <div class="flex gap-[4px] items-center manual">
+                    <div class="manual-icon">
+                      <img src="./assets/icons/manual.svg" alt="" />
+                    </div>
+                    <p
+                      class="point font-[500] text-[12px] d:text-[14px] tracking-[-0.02em] leading-[12px] d:leading-[17.64px] text-[#90A3BF]"
+                    >
+                      Manual
+                    </p>
+                  </div>
+                  <div class="flex gap-[4px] items-center 2-people">
+                    <div class="2-people-icon">
+                      <img src="./assets/icons/profile-2user.svg" alt="" />
+                    </div>
+                    <p
+                      class="point font-[500] text-[12px] d:text-[14px] tracking-[-0.02em] leading-[12px] d:leading-[17.64px] text-[#90A3BF]"
+                    >
+                      2 people
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-evenly mt-[28px] d:mt-[24px] card__body">
+                <div class="card__body-price">
+                  <p
+                    class="text-[20px] font-[700] leading-[25px] tracking-[-0.01em]"
+                  >
+                    99$/
+                    <span
+                      class="text-[16px] d:text-[14px] font-[700] leading-[20px] tracking-[-0.01em] text-[#90A3BF]"
+                    >
+                      day</span
+                    >
+                  </p>
+                </div>
+                <div
+                  class="card__body-btn btn rounded-[4px] px-[16px] py-[10px] text-[12px] font-[600] leading-[15px] tracking-[-0.02em] text-white bg-blue"
+                >
+                  Rental Now
+                </div>
+              </div>
+              <div class="absolute wish top-[24px] right-[24px]">
+                <img src="./assets/icons/wish.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- POPULAR-CARD -->
+
+      <!-- RECOMMENDATION CAR -->
+      <section class="recommendation-card mt-[32px] d:mt-[36px]">
+        <div class="container">
+          <h2
+            class="recommendation-card__title px-[20px] py-[10px] font-[600] text-[14px] d:text-[16px] leading-[21px] tracking-[-0.02em] text-[#90A3BF]"
+          >
+            Recommendation Car
+          </h2>
+          <div
+            class="grid grid-cols-1 d:grid-cols-4 mt-[20px] gap-[19px] d:gap-[32px] card-wrapper"
+          >
+            <div class="card rounded-[10px] p-[16px] relative bg-white">
+              <div class="card__header">
+                <h3
+                  class="card-title text-[16px] d:text-[20px] font-[600] d:font-[700] leading-[24px] d:leading-[30px] tracking-[-0.02em] d:tracking-[-0.03em] text-black"
+                >
+                  All New Rush
+                </h3>
+                <p
+                  class="car-type mt-[4px] text-[12px] d:text-[14px] font-[500] d:font-[700] tracking-[-0.02em] leading-[12px] d:leading-[21px] text-[#90A3BF]"
+                >
+                  SUV
+                </p>
+                <div class="relative card__img-wrapper">
+                  <div class="mx-auto mt-[32px] d:mt-[64px] w-[75%] card__img">
+                    <img
+                      src="./assets/images/recommendation__car-1.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="absolute block card__box-shadow w-[100%] h-[60%]"
+                  ></div>
+                </div>
+
+                <div
+                  class="grid grid-cols-3 mt-[44px] d:mt-[64px] card__header__car-info"
+                >
+                  <div class="flex gap-[4px] items-center oil">
+                    <div class="oil-icon">
+                      <img src="./assets/icons/gas-station.svg" alt="" />
+                    </div>
+                    <p
+                      class="point font-[500] text-[12px] d:text-[14px] tracking-[-0.02em] leading-[12px] d:leading-[17.64px] text-[#90A3BF]"
+                    >
+                      90L
+                    </p>
+                  </div>
+                  <div class="flex gap-[4px] items-center manual">
+                    <div class="manual-icon">
+                      <img src="./assets/icons/manual.svg" alt="" />
+                    </div>
+                    <p
+                      class="point font-[500] text-[12px] d:text-[14px] tracking-[-0.02em] leading-[12px] d:leading-[17.64px] text-[#90A3BF]"
+                    >
+                      Manual
+                    </p>
+                  </div>
+                  <div class="flex gap-[4px] items-center 2-people">
+                    <div class="2-people-icon">
+                      <img src="./assets/icons/profile-2user.svg" alt="" />
+                    </div>
+                    <p
+                      class="point font-[500] text-[12px] d:text-[14px] tracking-[-0.02em] leading-[12px] d:leading-[17.64px] text-[#90A3BF]"
+                    >
+                      2 people
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-evenly mt-[28px] d:mt-[24px] card__body">
+                <div class="card__body-price">
+                  <p
+                    class="text-[20px] font-[700] leading-[25px] tracking-[-0.01em]"
+                  >
+                    99$/
+                    <span
+                      class="text-[16px] d:text-[14px] font-[700] leading-[20px] tracking-[-0.01em] text-[#90A3BF]"
+                    >
+                      day</span
+                    >
+                  </p>
+                </div>
+                <div
+                  class="card__body-btn btn rounded-[4px] px-[16px] py-[10px] text-[12px] font-[600] leading-[15px] tracking-[-0.02em] text-white bg-blue"
+                >
+                  Rental Now
+                </div>
+              </div>
+              <div class="absolute wish top-[24px] right-[24px]">
+                <img src="./assets/icons/wish.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="card rounded-[10px] p-[16px] relative bg-white">
+              <div class="card__header">
+                <h3
+                  class="card-title text-[16px] d:text-[20px] font-[600] d:font-[700] leading-[24px] d:leading-[30px] tracking-[-0.02em] d:tracking-[-0.03em] text-black"
+                >
+                  CR - V
+                </h3>
+                <p
+                  class="car-type mt-[4px] text-[12px] d:text-[14px] font-[500] d:font-[700] tracking-[-0.02em] leading-[12px] d:leading-[21px] text-[#90A3BF]"
+                >
+                  SUV
+                </p>
+                <div class="relative card__img-wrapper">
+                  <div class="mx-auto mt-[32px] d:mt-[64px] w-[75%] card__img">
+                    <img
+                      src="./assets/images/recommendation__car-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="absolute block card__box-shadow w-[100%] h-[60%]"
+                  ></div>
+                </div>
+
+                <div
+                  class="grid grid-cols-3 mt-[44px] d:mt-[64px] card__header__car-info"
+                >
+                  <div class="flex gap-[4px] items-center oil">
+                    <div class="oil-icon">
+                      <img src="./assets/icons/gas-station.svg" alt="" />
+                    </div>
+                    <p
+                      class="point font-[500] text-[12px] d:text-[14px] tracking-[-0.02em] leading-[12px] d:leading-[17.64px] text-[#90A3BF]"
+                    >
+                      90L
+                    </p>
+                  </div>
+                  <div class="flex gap-[4px] items-center manual">
+                    <div class="manual-icon">
+                      <img src="./assets/icons/manual.svg" alt="" />
+                    </div>
+                    <p
+                      class="point font-[500] text-[12px] d:text-[14px] tracking-[-0.02em] leading-[12px] d:leading-[17.64px] text-[#90A3BF]"
+                    >
+                      Manual
+                    </p>
+                  </div>
+                  <div class="flex gap-[4px] items-center 2-people">
+                    <div class="2-people-icon">
+                      <img src="./assets/icons/profile-2user.svg" alt="" />
+                    </div>
+                    <p
+                      class="point font-[500] text-[12px] d:text-[14px] tracking-[-0.02em] leading-[12px] d:leading-[17.64px] text-[#90A3BF]"
+                    >
+                      2 people
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-evenly mt-[28px] d:mt-[24px] card__body">
+                <div class="card__body-price">
+                  <p
+                    class="text-[20px] font-[700] leading-[25px] tracking-[-0.01em]"
+                  >
+                    99$/
+                    <span
+                      class="text-[16px] d:text-[14px] font-[700] leading-[20px] tracking-[-0.01em] text-[#90A3BF]"
+                    >
+                      day</span
+                    >
+                  </p>
+                </div>
+                <div
+                  class="card__body-btn btn rounded-[4px] px-[16px] py-[10px] text-[12px] font-[600] leading-[15px] tracking-[-0.02em] text-white bg-blue"
+                >
+                  Rental Now
+                </div>
+              </div>
+              <div class="absolute wish top-[24px] right-[24px]">
+                <img src="./assets/icons/wish.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="card rounded-[10px] p-[16px] relative bg-white">
+              <div class="card__header">
+                <h3
+                  class="card-title text-[16px] d:text-[20px] font-[600] d:font-[700] leading-[24px] d:leading-[30px] tracking-[-0.02em] d:tracking-[-0.03em] text-black"
+                >
+                  All New Terios
+                </h3>
+                <p
+                  class="car-type mt-[4px] text-[12px] d:text-[14px] font-[500] d:font-[700] tracking-[-0.02em] leading-[12px] d:leading-[21px] text-[#90A3BF]"
+                >
+                  SUV
+                </p>
+                <div class="relative card__img-wrapper">
+                  <div class="mx-auto mt-[32px] d:mt-[64px] w-[75%] card__img">
+                    <img
+                      src="./assets/images/recommendation__car-3.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="absolute block card__box-shadow w-[100%] h-[60%]"
+                  ></div>
+                </div>
+
+                <div
+                  class="grid grid-cols-3 mt-[44px] d:mt-[64px] card__header__car-info"
+                >
+                  <div class="flex gap-[4px] items-center oil">
+                    <div class="oil-icon">
+                      <img src="./assets/icons/gas-station.svg" alt="" />
+                    </div>
+                    <p
+                      class="point font-[500] text-[12px] d:text-[14px] tracking-[-0.02em] leading-[12px] d:leading-[17.64px] text-[#90A3BF]"
+                    >
+                      90L
+                    </p>
+                  </div>
+                  <div class="flex gap-[4px] items-center manual">
+                    <div class="manual-icon">
+                      <img src="./assets/icons/manual.svg" alt="" />
+                    </div>
+                    <p
+                      class="point font-[500] text-[12px] d:text-[14px] tracking-[-0.02em] leading-[12px] d:leading-[17.64px] text-[#90A3BF]"
+                    >
+                      Manual
+                    </p>
+                  </div>
+                  <div class="flex gap-[4px] items-center 2-people">
+                    <div class="2-people-icon">
+                      <img src="./assets/icons/profile-2user.svg" alt="" />
+                    </div>
+                    <p
+                      class="point font-[500] text-[12px] d:text-[14px] tracking-[-0.02em] leading-[12px] d:leading-[17.64px] text-[#90A3BF]"
+                    >
+                      2 people
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-evenly mt-[28px] d:mt-[24px] card__body">
+                <div class="card__body-price">
+                  <p
+                    class="text-[20px] font-[700] leading-[25px] tracking-[-0.01em]"
+                  >
+                    99$/
+                    <span
+                      class="text-[16px] d:text-[14px] font-[700] leading-[20px] tracking-[-0.01em] text-[#90A3BF]"
+                    >
+                      day</span
+                    >
+                  </p>
+                </div>
+                <div
+                  class="card__body-btn btn rounded-[4px] px-[16px] py-[10px] text-[12px] font-[600] leading-[15px] tracking-[-0.02em] text-white bg-blue"
+                >
+                  Rental Now
+                </div>
+              </div>
+              <div class="absolute wish top-[24px] right-[24px]">
+                <img src="./assets/icons/wish.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="card rounded-[10px] p-[16px] relative bg-white">
+              <div class="card__header">
+                <h3
+                  class="card-title text-[16px] d:text-[20px] font-[600] d:font-[700] leading-[24px] d:leading-[30px] tracking-[-0.02em] d:tracking-[-0.03em] text-black"
+                >
+                  Nissan GT - R
+                </h3>
+                <p
+                  class="car-type mt-[4px] text-[12px] d:text-[14px] font-[500] d:font-[700] tracking-[-0.02em] leading-[12px] d:leading-[21px] text-[#90A3BF]"
+                >
+                  Sport
+                </p>
+                <div class="relative card__img-wrapper">
+                  <div class="mx-auto mt-[32px] d:mt-[64px] w-[75%] card__img">
+                    <img src="./assets/images/hero__car-2.svg" alt="" />
+                  </div>
+                  <div
+                    class="absolute block card__box-shadow w-[100%] h-[60%]"
+                  ></div>
+                </div>
+
+                <div
+                  class="grid grid-cols-3 mt-[44px] d:mt-[64px] card__header__car-info"
+                >
+                  <div class="flex gap-[4px] items-center oil">
+                    <div class="oil-icon">
+                      <img src="./assets/icons/gas-station.svg" alt="" />
+                    </div>
+                    <p
+                      class="point font-[500] text-[12px] d:text-[14px] tracking-[-0.02em] leading-[12px] d:leading-[17.64px] text-[#90A3BF]"
+                    >
+                      90L
+                    </p>
+                  </div>
+                  <div class="flex gap-[4px] items-center manual">
+                    <div class="manual-icon">
+                      <img src="./assets/icons/manual.svg" alt="" />
+                    </div>
+                    <p
+                      class="point font-[500] text-[12px] d:text-[14px] tracking-[-0.02em] leading-[12px] d:leading-[17.64px] text-[#90A3BF]"
+                    >
+                      Manual
+                    </p>
+                  </div>
+                  <div class="flex gap-[4px] items-center 2-people">
+                    <div class="2-people-icon">
+                      <img src="./assets/icons/profile-2user.svg" alt="" />
+                    </div>
+                    <p
+                      class="point font-[500] text-[12px] d:text-[14px] tracking-[-0.02em] leading-[12px] d:leading-[17.64px] text-[#90A3BF]"
+                    >
+                      2 people
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-evenly mt-[28px] d:mt-[24px] card__body">
+                <div class="card__body-price">
+                  <p
+                    class="text-[20px] font-[700] leading-[25px] tracking-[-0.01em]"
+                  >
+                    99$/
+                    <span
+                      class="text-[16px] d:text-[14px] font-[700] leading-[20px] tracking-[-0.01em] text-[#90A3BF]"
+                    >
+                      day</span
+                    >
+                  </p>
+                </div>
+                <div
+                  class="card__body-btn btn rounded-[4px] px-[16px] py-[10px] text-[12px] font-[600] leading-[15px] tracking-[-0.02em] text-white bg-blue"
+                >
+                  Rental Now
+                </div>
+              </div>
+              <div class="absolute wish top-[24px] right-[24px]">
+                <img src="./assets/icons/wish.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="card rounded-[10px] p-[16px] relative bg-white">
+              <div class="card__header">
+                <h3
+                  class="card-title text-[16px] d:text-[20px] font-[600] d:font-[700] leading-[24px] d:leading-[30px] tracking-[-0.02em] d:tracking-[-0.03em] text-black"
+                >
+                  CR - V
+                </h3>
+                <p
+                  class="car-type mt-[4px] text-[12px] d:text-[14px] font-[500] d:font-[700] tracking-[-0.02em] leading-[12px] d:leading-[21px] text-[#90A3BF]"
+                >
+                  SUV
+                </p>
+                <div class="relative card__img-wrapper">
+                  <div class="mx-auto mt-[32px] d:mt-[64px] w-[75%] card__img">
+                    <img
+                      src="./assets/images/recommendation__car-4.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="absolute block card__box-shadow w-[100%] h-[60%]"
+                  ></div>
+                </div>
+
+                <div
+                  class="grid grid-cols-3 mt-[44px] d:mt-[64px] card__header__car-info"
+                >
+                  <div class="flex gap-[4px] items-center oil">
+                    <div class="oil-icon">
+                      <img src="./assets/icons/gas-station.svg" alt="" />
+                    </div>
+                    <p
+                      class="point font-[500] text-[12px] d:text-[14px] tracking-[-0.02em] leading-[12px] d:leading-[17.64px] text-[#90A3BF]"
+                    >
+                      90L
+                    </p>
+                  </div>
+                  <div class="flex gap-[4px] items-center manual">
+                    <div class="manual-icon">
+                      <img src="./assets/icons/manual.svg" alt="" />
+                    </div>
+                    <p
+                      class="point font-[500] text-[12px] d:text-[14px] tracking-[-0.02em] leading-[12px] d:leading-[17.64px] text-[#90A3BF]"
+                    >
+                      Manual
+                    </p>
+                  </div>
+                  <div class="flex gap-[4px] items-center 2-people">
+                    <div class="2-people-icon">
+                      <img src="./assets/icons/profile-2user.svg" alt="" />
+                    </div>
+                    <p
+                      class="point font-[500] text-[12px] d:text-[14px] tracking-[-0.02em] leading-[12px] d:leading-[17.64px] text-[#90A3BF]"
+                    >
+                      2 people
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-evenly mt-[28px] d:mt-[24px] card__body">
+                <div class="card__body-price">
+                  <p
+                    class="text-[20px] font-[700] leading-[25px] tracking-[-0.01em]"
+                  >
+                    99$/
+                    <span
+                      class="text-[16px] d:text-[14px] font-[700] leading-[20px] tracking-[-0.01em] text-[#90A3BF]"
+                    >
+                      day</span
+                    >
+                  </p>
+                </div>
+                <div
+                  class="card__body-btn btn rounded-[4px] px-[16px] py-[10px] text-[12px] font-[600] leading-[15px] tracking-[-0.02em] text-white bg-blue"
+                >
+                  Rental Now
+                </div>
+              </div>
+              <div class="absolute wish top-[24px] right-[24px]">
+                <img src="./assets/icons/wish.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="card rounded-[10px] p-[16px] relative bg-white">
+              <div class="card__header">
+                <h3
+                  class="card-title text-[16px] d:text-[20px] font-[600] d:font-[700] leading-[24px] d:leading-[30px] tracking-[-0.02em] d:tracking-[-0.03em] text-black"
+                >
+                  MG ZX Exclusice
+                </h3>
+                <p
+                  class="car-type mt-[4px] text-[12px] d:text-[14px] font-[500] d:font-[700] tracking-[-0.02em] leading-[12px] d:leading-[21px] text-[#90A3BF]"
+                >
+                  Hatchback
+                </p>
+                <div class="relative card__img-wrapper">
+                  <div class="mx-auto mt-[32px] d:mt-[64px] w-[75%] card__img">
+                    <img
+                      src="./assets/images/recommendation__car-5.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="absolute block card__box-shadow w-[100%] h-[60%]"
+                  ></div>
+                </div>
+
+                <div
+                  class="grid grid-cols-3 mt-[44px] d:mt-[64px] card__header__car-info"
+                >
+                  <div class="flex gap-[4px] items-center oil">
+                    <div class="oil-icon">
+                      <img src="./assets/icons/gas-station.svg" alt="" />
+                    </div>
+                    <p
+                      class="point font-[500] text-[12px] d:text-[14px] tracking-[-0.02em] leading-[12px] d:leading-[17.64px] text-[#90A3BF]"
+                    >
+                      90L
+                    </p>
+                  </div>
+                  <div class="flex gap-[4px] items-center manual">
+                    <div class="manual-icon">
+                      <img src="./assets/icons/manual.svg" alt="" />
+                    </div>
+                    <p
+                      class="point font-[500] text-[12px] d:text-[14px] tracking-[-0.02em] leading-[12px] d:leading-[17.64px] text-[#90A3BF]"
+                    >
+                      Manual
+                    </p>
+                  </div>
+                  <div class="flex gap-[4px] items-center 2-people">
+                    <div class="2-people-icon">
+                      <img src="./assets/icons/profile-2user.svg" alt="" />
+                    </div>
+                    <p
+                      class="point font-[500] text-[12px] d:text-[14px] tracking-[-0.02em] leading-[12px] d:leading-[17.64px] text-[#90A3BF]"
+                    >
+                      2 people
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-evenly mt-[28px] d:mt-[24px] card__body">
+                <div class="card__body-price">
+                  <p
+                    class="text-[20px] font-[700] leading-[25px] tracking-[-0.01em]"
+                  >
+                    99$/
+                    <span
+                      class="text-[16px] d:text-[14px] font-[700] leading-[20px] tracking-[-0.01em] text-[#90A3BF]"
+                    >
+                      day</span
+                    >
+                  </p>
+                </div>
+                <div
+                  class="card__body-btn btn rounded-[4px] px-[16px] py-[10px] text-[12px] font-[600] leading-[15px] tracking-[-0.02em] text-white bg-blue"
+                >
+                  Rental Now
+                </div>
+              </div>
+              <div class="absolute wish top-[24px] right-[24px]">
+                <img src="./assets/icons/wish.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="card rounded-[10px] p-[16px] relative bg-white">
+              <div class="card__header">
+                <h3
+                  class="card-title text-[16px] d:text-[20px] font-[600] d:font-[700] leading-[24px] d:leading-[30px] tracking-[-0.02em] d:tracking-[-0.03em] text-black"
+                >
+                  New MG ZS
+                </h3>
+                <p
+                  class="car-type mt-[4px] text-[12px] d:text-[14px] font-[500] d:font-[700] tracking-[-0.02em] leading-[12px] d:leading-[21px] text-[#90A3BF]"
+                >
+                  Suv
+                </p>
+                <div class="relative card__img-wrapper">
+                  <div class="mx-auto mt-[32px] d:mt-[64px] w-[75%] card__img">
+                    <img
+                      src="./assets/images/recommendation__car-6.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="absolute block card__box-shadow w-[100%] h-[60%]"
+                  ></div>
+                </div>
+
+                <div
+                  class="grid grid-cols-3 mt-[44px] d:mt-[64px] card__header__car-info"
+                >
+                  <div class="flex gap-[4px] items-center oil">
+                    <div class="oil-icon">
+                      <img src="./assets/icons/gas-station.svg" alt="" />
+                    </div>
+                    <p
+                      class="point font-[500] text-[12px] d:text-[14px] tracking-[-0.02em] leading-[12px] d:leading-[17.64px] text-[#90A3BF]"
+                    >
+                      90L
+                    </p>
+                  </div>
+                  <div class="flex gap-[4px] items-center manual">
+                    <div class="manual-icon">
+                      <img src="./assets/icons/manual.svg" alt="" />
+                    </div>
+                    <p
+                      class="point font-[500] text-[12px] d:text-[14px] tracking-[-0.02em] leading-[12px] d:leading-[17.64px] text-[#90A3BF]"
+                    >
+                      Manual
+                    </p>
+                  </div>
+                  <div class="flex gap-[4px] items-center 2-people">
+                    <div class="2-people-icon">
+                      <img src="./assets/icons/profile-2user.svg" alt="" />
+                    </div>
+                    <p
+                      class="point font-[500] text-[12px] d:text-[14px] tracking-[-0.02em] leading-[12px] d:leading-[17.64px] text-[#90A3BF]"
+                    >
+                      2 people
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-evenly mt-[28px] d:mt-[24px] card__body">
+                <div class="card__body-price">
+                  <p
+                    class="text-[20px] font-[700] leading-[25px] tracking-[-0.01em]"
+                  >
+                    99$/
+                    <span
+                      class="text-[16px] d:text-[14px] font-[700] leading-[20px] tracking-[-0.01em] text-[#90A3BF]"
+                    >
+                      day</span
+                    >
+                  </p>
+                </div>
+                <div
+                  class="card__body-btn btn rounded-[4px] px-[16px] py-[10px] text-[12px] font-[600] leading-[15px] tracking-[-0.02em] text-white bg-blue"
+                >
+                  Rental Now
+                </div>
+              </div>
+              <div class="absolute wish top-[24px] right-[24px]">
+                <img src="./assets/icons/wish.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="card rounded-[10px] p-[16px] relative bg-white">
+              <div class="card__header">
+                <h3
+                  class="card-title text-[16px] d:text-[20px] font-[600] d:font-[700] leading-[24px] d:leading-[30px] tracking-[-0.02em] d:tracking-[-0.03em] text-black"
+                >
+                  Nissan GT - R
+                </h3>
+                <p
+                  class="car-type mt-[4px] text-[12px] d:text-[14px] font-[500] d:font-[700] tracking-[-0.02em] leading-[12px] d:leading-[21px] text-[#90A3BF]"
+                >
+                  Sport
+                </p>
+                <div class="relative card__img-wrapper">
+                  <div class="mx-auto mt-[32px] d:mt-[64px] w-[75%] card__img">
+                    <img src="./assets/images/hero__car-2.svg" alt="" />
+                  </div>
+                  <div
+                    class="absolute block card__box-shadow w-[100%] h-[60%]"
+                  ></div>
+                </div>
+
+                <div
+                  class="grid grid-cols-3 mt-[44px] d:mt-[64px] card__header__car-info"
+                >
+                  <div class="flex gap-[4px] items-center oil">
+                    <div class="oil-icon">
+                      <img src="./assets/icons/gas-station.svg" alt="" />
+                    </div>
+                    <p
+                      class="point font-[500] text-[12px] d:text-[14px] tracking-[-0.02em] leading-[12px] d:leading-[17.64px] text-[#90A3BF]"
+                    >
+                      90L
+                    </p>
+                  </div>
+                  <div class="flex gap-[4px] items-center manual">
+                    <div class="manual-icon">
+                      <img src="./assets/icons/manual.svg" alt="" />
+                    </div>
+                    <p
+                      class="point font-[500] text-[12px] d:text-[14px] tracking-[-0.02em] leading-[12px] d:leading-[17.64px] text-[#90A3BF]"
+                    >
+                      Manual
+                    </p>
+                  </div>
+                  <div class="flex gap-[4px] items-center 2-people">
+                    <div class="2-people-icon">
+                      <img src="./assets/icons/profile-2user.svg" alt="" />
+                    </div>
+                    <p
+                      class="point font-[500] text-[12px] d:text-[14px] tracking-[-0.02em] leading-[12px] d:leading-[17.64px] text-[#90A3BF]"
+                    >
+                      2 people
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-evenly mt-[28px] d:mt-[24px] card__body">
+                <div class="card__body-price">
+                  <p
+                    class="text-[20px] font-[700] leading-[25px] tracking-[-0.01em]"
+                  >
+                    99$/
+                    <span
+                      class="text-[16px] d:text-[14px] font-[700] leading-[20px] tracking-[-0.01em] text-[#90A3BF]"
+                    >
+                      day</span
+                    >
+                  </p>
+                </div>
+                <div
+                  class="card__body-btn btn rounded-[4px] px-[16px] py-[10px] text-[12px] font-[600] leading-[15px] tracking-[-0.02em] text-white bg-blue"
+                >
+                  Rental Now
+                </div>
+              </div>
+              <div class="absolute wish top-[24px] right-[24px]">
+                <img src="./assets/icons/wish.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="mt-[64px] flex justify-center">
+            <div
+              class="recommendation__btn btn inline-block rounded-[4px] px-[16px] py-[10px] text-[12px] font-[600] leading-[15px] tracking-[-0.02em] text-white bg-blue"
+            >
+              Show more car
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- RECOMMEND CAR -->
+    </main>
+
+    <footer class="footer d:p-[60px] mt-[48px]">
+      <div class="container">
+        <div class="footer__wrapper">
+        <div
+          class="footer__top d:pb-[32px] d:border-b-[1px] d:border-b-[#13131329] flex flex-col d:flex-row gap-[48px] d:justify-between"
+        >
+          <div class="footer__left d:w-[22.2%]">
+            <h2
+              class="footer__logo-title font-[700] text-[32px] leading-[48px] tracking-[-0.03em] text-blue"
+            >
+              MORENT
+            </h2>
+            <div
+              class="footer__left-info mt-[16px] font-[500] opacity-[60%] text-[12px] d:text-[16px] leading-[24px] tracking-[-0.01em] d:tracking-[-0.02em]"
+            >
+              Our vision is to provide convenience and help increase your sales
+              business.
+            </div>
+          </div>
+          <div class="flex gap-[60px] flex-wrap footer__right">
+            <div class="footer__right-col">
+              <h3
+                class="footer__right-col__title font-[600] text-[20px] leading-[30px] tracking-[-0.02em] text-black"
+              >
+                About
+              </h3>
+              <ul class="footer__links mt-[16px] d:mt-[24px]">
+                <li>
+                  <a href="#">
+                    <span
+                      class="font-[500] text-[16px] leading-[19px] d:leading-[24px] d:tracking-[-0.02em] text-[#90A3BF]"
+                    >
+                      How it works
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span
+                      class="font-[500] text-[16px] leading-[19px] d:leading-[24px] d:tracking-[-0.02em] text-[#90A3BF]"
+                    >
+                      Featured
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span
+                      class="font-[500] text-[16px] leading-[19px] d:leading-[24px] d:tracking-[-0.02em] text-[#90A3BF]"
+                    >
+                      Partnership
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span
+                      class="font-[500] text-[16px] leading-[19px] d:leading-[24px] d:tracking-[-0.02em] text-[#90A3BF]"
+                    >
+                      Bussiness Relation
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__right-col">
+              <h3
+                class="footer__right-col__title font-[600] text-[20px] leading-[30px] tracking-[-0.02em] text-black"
+              >
+                Community
+              </h3>
+              <ul class="footer__links mt-[16px] d:mt-[24px]">
+                <li>
+                  <a href="#">
+                    <span
+                      class="font-[500] text-[16px] leading-[19px] d:leading-[24px] d:tracking-[-0.02em] text-[#90A3BF]"
+                    >
+                      Events
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span
+                      class="font-[500] text-[16px] leading-[19px] d:leading-[24px] d:tracking-[-0.02em] text-[#90A3BF]"
+                    >
+                      Blog
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span
+                      class="font-[500] text-[16px] leading-[19px] d:leading-[24px] d:tracking-[-0.02em] text-[#90A3BF]"
+                    >
+                      Podcast
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span
+                      class="font-[500] text-[16px] leading-[19px] d:leading-[24px] d:tracking-[-0.02em] text-[#90A3BF]"
+                    >
+                      Invite a friend
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__right-col">
+              <h3
+                class="footer__right-col__title font-[600] text-[20px] leading-[30px] tracking-[-0.02em] text-black"
+              >
+                Socials
+              </h3>
+              <ul class="footer__links mt-[16px] d:mt-[24px]">
+                <li>
+                  <a href="#">
+                    <span
+                      class="font-[500] text-[16px] leading-[19px] d:leading-[24px] d:tracking-[-0.02em] text-[#90A3BF]"
+                    >
+                      Discord
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span
+                      class="font-[500] text-[16px] leading-[19px] d:leading-[24px] d:tracking-[-0.02em] text-[#90A3BF]"
+                    >
+                      Instagram
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span
+                      class="font-[500] text-[16px] leading-[19px] d:leading-[24px] d:tracking-[-0.02em] text-[#90A3BF]"
+                    >
+                      Twitter
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span
+                      class="font-[500] text-[16px] leading-[19px] d:leading-[24px] d:tracking-[-0.02em] text-[#90A3BF]"
+                    >
+                      Facebook
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col-reverse d:flex-row  d:justify-between footer__bottom mt-[48px] gap-[32px] d:mt-[36px] ">
+          <div
+            class="footer__bottom-copyright font-[600] text-[16px] leading-[24px] d:leading-[24px] d:tracking-[-0.02em] text-[#1A202C]"
+          >
+            ©2022 MORENT. All rights reserved
+          </div>
+          <ul class="flex justify-between footer__bottom-links">
+            <li>
+              <a href="#">
+                <span
+                  class="font-[600] text-[16px] leading-[24px] d:leading-[24px] d:tracking-[-0.02em] text-[##1A202C]"
+                >
+                  Privacy & Policy
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span
+                  class="font-[600] text-[16px] leading-[24px] d:leading-[24px] d:tracking-[-0.02em] text-[##1A202C]"
+                >
+                  Terms & Condition
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </div>
+    </footer>
+  </body>
+
+  <script>
+    // hero-card-1
+    // Select the hero card and the car horn audio element
+    const heroCard = document.getElementById("hero-card-1");
+    const carBeep = document.getElementById("car-beep-1");
+
+    // Play the car beep sound when the card is hovered
+    heroCard.addEventListener("mouseenter", () => {
+      carBeep.currentTime = 0; // Restart the sound
+      carBeep.volume = 1; // Ensure volume is set
+      carBeep.play().catch((err) => {
+        console.error("Audio playback failed:", err);
+      });
+    });
+
+    // hero-card-2
+    // Select the hero card and the car horn audio element
+    const heroCard_2 = document.getElementById("hero-card-2");
+    const carBeep_2 = document.getElementById("car-beep-2");
+
+    // Play the car beep sound when the card is hovered
+    heroCard_2.addEventListener("mouseenter", () => {
+      carBeep_2.currentTime = 0; // Restart the sound
+      carBeep_2.volume = 1; // Ensure volume is set
+      carBeep_2.play().catch((err) => {
+        console.error("Audio playback failed:", err);
+      });
+    });
+  </script>
+</html>
